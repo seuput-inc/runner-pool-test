@@ -1,0 +1,13 @@
+name: pool-test
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo linux started; sleep 20
+  mac:
+    runs-on: macos-latest
+    steps:
+      - run: echo mac started; sleep 20
